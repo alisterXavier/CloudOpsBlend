@@ -1,0 +1,7 @@
+
+
+# Ignore file
+keys.tf
+.terraform
+.terraform.lock.hcl
+*.zip
