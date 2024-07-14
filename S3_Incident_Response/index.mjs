@@ -4,44 +4,46 @@ import {
   PutBucketPolicyCommand,
   GetBucketPolicyCommand,
 } from '@aws-sdk/client-s3';
-import { STSClient, GetCallerIdentityCommand } from "@aws-sdk/client-sts";
+import { STSClient, GetCallerIdentityCommand } from '@aws-sdk/client-sts';
 
-const config = {}, input = {};
+const config = {},
+  input = {};
 
-var client = new S3Client(config);
+var s3Client = new S3Client(config);
 const stsClient = new STSClient(config);
 
 export const handler = async (event, context) => {
-  
   if (event.awslogs && event.awslogs.data) {
     var log;
-    
+
     const command = new GetCallerIdentityCommand(input);
     const { Account } = await stsClient.send(command);
-    
+
     const payload = Buffer.from(event.awslogs.data, 'base64');
     const logevents = JSON.parse(zlib.unzipSync(payload).toString()).logEvents;
+
     for (const logevent of logevents) {
       log = JSON.parse(logevent.message);
     }
-    
+
     const userArn = log.userIdentity.arn;
-    
 
     if (
-      !userArn.includes(
-        `arn:aws:sts::${Account}:assumed-role/s3_Access_Role`
-      )
+      !userArn.includes(`arn:aws:sts::${Account}:assumed-role/s3_Access_Role`)
     ) {
       const bucketName = log.requestParameters.bucketName;
+      var params = {
+        Bucket: bucketName,
+      };
+
       const existingPolicy = new GetBucketPolicyCommand(params);
+      const policyResponse = await s3Client.send(existingPolicy);
+
       const policy = {
         Id: 'DenyAccessForUser',
         Version: '2012-10-17',
         Statement: [
-          {
-            ...existingPolicy['Policy']['Statement'],
-          },
+          ...JSON.parse(policyResponse['Policy'])['Statement'],
           {
             Effect: 'Deny',
             Principal: {
@@ -56,17 +58,14 @@ export const handler = async (event, context) => {
         ],
       };
 
-      var params = {
-        Bucket: bucketName,
-        Policy: JSON.stringify(policy),
-      };
+      params['Policy'] = JSON.stringify(policy);
 
       const command = new PutBucketPolicyCommand(params);
-      const response = await client.send(command);
+      await s3Client.send(command);
 
       return {
         statusCode: 200,
-        message: response,
+        message: 'Added user to BPolicy DENY',
       };
     }
   }

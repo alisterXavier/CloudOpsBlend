@@ -13,3 +13,9 @@ module "S3_Incident_Response" {
   ACCESS_KEY        = var.AWS_ACCESS_KEY
   SECRET_ACCESS_KEY = var.AWS_SECRET_ACCESS_KEY
 }
+
+module "EKS_ECS_AUTO_SCALING" {
+  source            = "./ECS_EKS_Auto_Scaling"
+  ACCESS_KEY        = var.AWS_ACCESS_KEY
+  SECRET_ACCESS_KEY = var.AWS_SECRET_ACCESS_KEY
+}

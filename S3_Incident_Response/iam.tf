@@ -118,7 +118,7 @@ resource "aws_iam_policy" "Lambda_Policy" {
     Statement : [
       {
         Effect : "Allow",
-        Action : "s3:PutBucketPolicy",
+        Action : ["s3:PutBucketPolicy", "s3:GetBucketPolicy"],
         Resource : "${aws_s3_bucket.TestBucket.arn}"
       },
       {

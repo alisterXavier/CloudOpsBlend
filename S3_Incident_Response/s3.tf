@@ -1,10 +1,10 @@
 resource "aws_s3_bucket" "TestBucket" {
-  bucket        = "testbucketbucketbucket"
+  bucket        = "testbucketbucketbucketbucket1011"
   force_destroy = true
 }
 
 resource "aws_s3_bucket" "TrailTestBucket" {
-  bucket        = "trailtestbucketbucket"
+  bucket        = "trailtestbucketbucketbucket1011"
   force_destroy = true
 }
 
