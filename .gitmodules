@@ -16,3 +16,6 @@
 [submodule "S3 Incident Response"]
 	path = S3 Incident Response
 	url = https://github.com/alisterXavier/S3-Incident-Response.git
+[submodule "EKS Prometheus Grafana"]
+	path = EKS Prometheus Grafana
+	url = https://github.com/alisterXavier/S3-Incident-Response.git
