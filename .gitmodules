@@ -1,9 +1,9 @@
 [submodule "Terraform Ansible"]
 	path = Terraform Ansible
 	url = https://github.com/alisterXavier/Terraform-Ansible-SSL-Cert-CWAgent.git
-[submodule "Hybrid Cloud"]
+[submodule "Hybrid Cloud EC2"]
 	path = Hybrid Cloud
-	url = https://github.com/alisterXavier/Hybrid-Cloud-Infra-Onprem-Aws.git
+	url = https://github.com/alisterXavier/Hybrid-Cloud-Infra-EC2-Onprem-Aws.git
 [submodule "Glue S3"]
 	path = Glue S3
 	url = https://github.com/alisterXavier/Glue-S3.git
