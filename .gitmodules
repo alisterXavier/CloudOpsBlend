@@ -18,4 +18,4 @@
 	url = https://github.com/alisterXavier/S3-Incident-Response.git
 [submodule "EKS Prometheus Grafana"]
 	path = EKS Prometheus Grafana
-	url = https://github.com/alisterXavier/S3-Incident-Response.git
+	url = https://github.com/alisterXavier/EKS-Prometheus-Grafana.git
