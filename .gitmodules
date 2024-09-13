@@ -13,3 +13,6 @@
 [submodule "ECS Disaster Recovery"]
 	path = ECS Disaster Recovery
 	url = https://github.com/alisterXavier/ECS-Disaster-Recovery.git
+[submodule "S3 Incident Response"]
+	path = S3 Incident Response
+	url = https://github.com/alisterXavier/S3-Incident-Response.git
