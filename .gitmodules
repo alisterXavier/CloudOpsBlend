@@ -4,3 +4,12 @@
 [submodule "Hybrid Cloud"]
 	path = Hybrid Cloud
 	url = https://github.com/alisterXavier/Hybrid-Cloud-Infra-Onprem-Aws.git
+[submodule "Glue S3"]
+	path = Glue S3
+	url = https://github.com/alisterXavier/Glue-S3.git
+[submodule "EKS Autoscaling Loadbalancing"]
+	path = EKS Autoscaling Loadbalancing
+	url = https://github.com/alisterXavier/EKS-Autoscaling-LoadBalancing.git
+[submodule "ECS Disaster Recovery"]
+	path = ECS Disaster Recovery
+	url = https://github.com/alisterXavier/ECS-Disaster-Recovery.git
