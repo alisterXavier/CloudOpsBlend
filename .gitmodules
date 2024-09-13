@@ -1,0 +1,6 @@
+[submodule "Terraform Ansible"]
+	path = Terraform Ansible
+	url = https://github.com/alisterXavier/Terraform-Ansible-SSL-Cert-CWAgent.git
+[submodule "Hybrid Cloud"]
+	path = Hybrid Cloud
+	url = https://github.com/alisterXavier/Hybrid-Cloud-Infra-Onprem-Aws.git
