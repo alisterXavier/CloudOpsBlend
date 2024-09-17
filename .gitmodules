@@ -16,3 +16,6 @@
 [submodule "ECS Disastery Recovery"]
 	path = ECS Disastery Recovery
 	url = https://github.com/alisterXavier/ECS-Disaster-Recovery.git
+[submodule "EKS Prometheus Grafana"]
+	path = EKS Prometheus Grafana
+	url = https://github.com/alisterXavier/EKS-Prometheus-Grafana.git
