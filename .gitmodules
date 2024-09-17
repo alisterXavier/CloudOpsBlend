@@ -1,21 +1,18 @@
 [submodule "Terraform Ansible"]
-	path = "Terraform Ansible"
+	path = Terraform Ansible
 	url = https://github.com/alisterXavier/Terraform-Ansible-SSL-Cert-CWAgent.git
 [submodule "Hybrid Cloud EC2"]
-	path = "Hybrid Cloud EC2"
+	path = Hybrid Cloud EC2
 	url = https://github.com/alisterXavier/Hybrid-Cloud-Infra-EC2-Onprem-Aws.git
 [submodule "Glue S3"]
-	path = "Glue S3"
+	path = Glue S3
 	url = https://github.com/alisterXavier/Glue-S3.git
 [submodule "EKS Autoscaling Loadbalancing"]
-	path = "EKS Autoscaling Loadbalancing"
+	path = EKS Autoscaling Loadbalancing
 	url = https://github.com/alisterXavier/EKS-Autoscaling-LoadBalancing.git
-[submodule "ECS Disaster Recovery"]
-	path = "ECS Disaster Recovery"
-	url = https://github.com/alisterXavier/ECS-Disaster-Recovery.git
 [submodule "S3 Incident Response"]
-	path = "S3 Incident Response"
+	path = S3 Incident Response
 	url = https://github.com/alisterXavier/S3-Incident-Response.git
-[submodule "EKS Prometheus Grafana"]
-	path = "EKS Prometheus Grafana"
-	url = https://github.com/alisterXavier/EKS-Prometheus-Grafana.git
+[submodule "ECS Disastery Recovery"]
+	path = ECS Disastery Recovery
+	url = https://github.com/alisterXavier/ECS-Disaster-Recovery.git
