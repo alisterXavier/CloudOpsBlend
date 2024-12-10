@@ -19,6 +19,6 @@
 [submodule "EKS Opensearch Jenkins"]
 	path = EKS Opensearch Jenkins
 	url = https://github.com/alisterXavier/EKS-Opensearch-Jenkins.git
-[submodule "EKS Autoscaling LoadBalancing"]
+[submodule "EKS-Autoscaling-LoadBalancing"]
 	path = EKS Autoscaling LoadBalancing
 	url = https://github.com/alisterXavier/EKS-Autoscaling-LoadBalancing.git
