@@ -19,3 +19,6 @@
 [submodule "EKS Prometheus Grafana"]
 	path = EKS Prometheus Grafana
 	url = https://github.com/alisterXavier/EKS-Prometheus-Grafana.git
+[submodule "EKS Opensearch Jenkins"]
+	path = EKS Opensearch Jenkins
+	url = https://github.com/alisterXavier/EKS-Opensearch-Jenkins.git
